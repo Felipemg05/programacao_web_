@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Cadastro</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
-    <div class="Textos">
-        <h1>Cadastro</h1>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" placeholder="Nome">
-        <label for="email">Email</label>
-        <input type="text" id="email" placeholder="Email">
-        <label for="senha">Senha</label>
-        <input type="password" id="senha" placeholder="Senha">
-        <input type="submit" value="Cadastrar">
-        
+    <div class="overlay">
+        <div class="login-container">
+            <div class="form-header">
+                <h2>Formulário</h2>
+            </div>
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="input-group">
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf" name="cpf" required>
+                </div>
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                <button type="submit">Entrar</button>
+            </form>
+            <div id="message"></div>
+        </div>
     </div>
-    <footer>
-        <h1>Felps</h1>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
